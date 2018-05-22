@@ -1,0 +1,48 @@
+<p>
+  view-details works!
+</p>
+
+<div>
+<tabel>
+  <tr>
+<th>
+  EMPLOYEE IDENTITY NUMBER
+</th>
+<th>
+  FIRST NAME
+</th>
+<th>
+  SURNAME
+</th>
+<th>
+GENDER
+</th>
+<th>
+AGE
+</th>
+<th>
+PHONE
+</th>
+<th>
+EMAIL ID
+</th>
+<th>
+LOCATION
+</th>
+</tr>
+
+<tr *ngFor="let emp of employee" >
+<td>{{emp.employeeId}}</td>
+<td>{{emp.firstName}}</td>
+<td>{{emp.lastName}}</td>
+<td>{{emp.gender}}</td>
+<td>{{emp.age}}</td>
+<td>{{emp.phone}}</td>
+<td>{{emp.emailid}}</td>
+<td>{{emp.location}}</td>
+<td> <button (click)="deleteEmployee(employee)">Delete</button></td>
+</tr>
+</tabel>
+
+
+</div>

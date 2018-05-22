@@ -1,0 +1,28 @@
+<div>
+<p>
+  edit-details works!
+  Click edit to change info
+</p>
+
+<from>
+    <div><label for="employee_Id"> EMPLOYEE IDENTITY NUMBER</label>
+      <input [(ngModel)]="employeemodel.employeeId" name="employee_Id"></div><br>
+     <div> <label for="firstName">FIRST NAME</label>
+      <input [(ngModel)]="employeemodel.firstName" name="firstName"></div><br>
+      <div> <label for="lastName">SURNAME</label>
+        <input [(ngModel)]="employeemodel.lastName" name="lastName"></div><br>
+      <div><label for="gender">GENDER</label>
+      <input [(ngModel)]="employeemodel.gender" name="gender"></div><br>
+      <div><label for="phone">PHONE</label>
+      <input [(ngModel)]="employeemodel.phone" name="phone"></div><br>
+      <div><label for="emailid">EMAIL ID</label>
+      <input type="email" [(ngModel)]="employeemodel.emailid" name="emailid"></div><br>
+      <div><label for="age">AGE</label>
+      <input  [(ngModel)]="employeemodel.age" name="age"></div><br>
+      <div><label for="location">LOCATION</label>
+      <input [(ngModel)]="employeemodel.location" name="location"></div><br>
+      <div><label for="password">PASSWORD</label> 
+      <input type="password" [(ngModel)]="employeemodel.password" name="password"></div><br>     
+  <button (click)="editEmployee()">EDIT USER DETAILS</button>
+</form>
+</div>
